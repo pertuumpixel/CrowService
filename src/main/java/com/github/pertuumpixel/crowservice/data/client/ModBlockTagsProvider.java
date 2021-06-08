@@ -20,10 +20,17 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 		
 		tag(ModTags.Blocks.ORES_SILVER).add(BlockInit.SILVER_ORE.get());
 		tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_SILVER);
-		
+
+		tag(ModTags.Blocks.ORES_COPPER).add(BlockInit.COPPER_ORE.get());
+		tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_COPPER);
+
 		tag(ModTags.Blocks.STORAGE_BLOCKS_SILVER).add(BlockInit.SILVER_BLOCK.get());
 		tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_SILVER);
-		
+
+		tag(ModTags.Blocks.STORAGE_BLOCKS_COPPER).add(BlockInit.COPPER_BLOCK.get());
+		tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_COPPER);
+
+
 	}
 
 

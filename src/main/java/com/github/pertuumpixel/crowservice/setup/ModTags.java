@@ -13,8 +13,10 @@ public class ModTags {
 
 	public static final class Blocks {
 		public static final ITag.INamedTag<Block> ORES_SILVER = forge("ores/silver");
+		public static final ITag.INamedTag<Block> ORES_COPPER = forge("ores/copper");
 		public static final ITag.INamedTag<Block> STORAGE_BLOCKS_SILVER = forge("storage_blocks/silver"); 
-				
+		public static final ITag.INamedTag<Block> STORAGE_BLOCKS_COPPER = forge("storage_blocks/copper");
+
 		private static ITag.INamedTag<Block> mod(String path){
 			return BlockTags.createOptional(new ResourceLocation(CrowService.MOD_ID, path));
 		}
@@ -28,11 +30,16 @@ public class ModTags {
 	public static final class Items {
 		public static final ITag.INamedTag<Item> ORES_SILVER = forge("ores/silver");
 		public static final ITag.INamedTag<Item> STORAGE_BLOCKS_SILVER = forge("storage_blocks/silver");
-		
-		
+
+		public static final ITag.INamedTag<Item> ORES_COPPER = forge("ores/copper");
+		public static final ITag.INamedTag<Item> STORAGE_BLOCKS_COPPER = forge("storage_blocks/copper");
+
+
 		public static final ITag.INamedTag<Item> INGOTS_SILVER = forge("ingots/silver");
-		
-		
+		public static final ITag.INamedTag<Item> INGOTS_COPPER = forge("ingots/copper");
+
+
+
 		private static ITag.INamedTag<Item> forge(String path){
 			return ItemTags.createOptional(new ResourceLocation("forge", path));
 		}
