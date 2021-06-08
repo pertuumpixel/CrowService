@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "crowservice:copper_ore"
+  },
+  "result": "crowservice:copper_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

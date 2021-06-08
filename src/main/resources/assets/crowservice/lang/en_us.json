@@ -1,0 +1,17 @@
+{
+	"item.crowservice.empty_envelope" : "Empty Envelope",
+	"item.crowservice.sealed_envelope" : "Sealed Envelope",
+	"item.crowservice.silver_ingot" : "Silver Ingot",
+	"item.crowservice.copper_ingot" : "Copper Ingot",
+	"item.crowservice.copper_coin" : "COPPER",
+	"item.crowservice.silver_coin" : "SILVER",
+	"item.crowservice.gold_coin" : "GOLD",
+	"block.crowservice.mailbox" : "Mailbox",
+	"block.crowservice.copper_ore" : "Copper Ore",
+	"block.crowservice.copper_block" : "Copper Block",
+	"block.crowservice.silver_ore" : "Silver Ore",
+	"block.crowservice.silver_block" : "Silver Block",
+	"tooltip.sealed_envelope.hold_shift" : "hold Shift for more information",
+	"itemGroup.crowtab" : "Crow Service"
+	
+}
