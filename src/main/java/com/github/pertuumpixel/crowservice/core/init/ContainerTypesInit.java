@@ -8,7 +8,5 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ContainerTypesInit {
 
-	public static final DeferredRegister<ContainerType<?>> CONTAINER_TYPE = DeferredRegister
-			.create(ForgeRegistries.CONTAINERS, CrowService.MOD_ID);
-
+	public static void register(){}
 }

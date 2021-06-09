@@ -3,13 +3,12 @@ package com.github.pertuumpixel.crowservice.core.init;
 import java.util.function.Supplier;
 
 import com.github.pertuumpixel.crowservice.CrowService;
-import com.github.pertuumpixel.crowservice.common.block.CoinPress;
+import com.github.pertuumpixel.crowservice.common.block.coin_press.CoinPressBlock;
 import com.github.pertuumpixel.crowservice.common.block.Mailbox;
 import com.github.pertuumpixel.crowservice.setup.Registration;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -26,7 +25,7 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> MAILBOX = register("mailbox", () -> new Mailbox());
 	
-	public static final RegistryObject<Block> COIN_PRESS = register("coin_press", () -> new CoinPress());
+	public static final RegistryObject<CoinPressBlock> COIN_PRESS = register("coin_press", () -> new CoinPressBlock());
 	
 	
 	public static final RegistryObject<Block> COPPER_ORE = register("copper_ore", 
