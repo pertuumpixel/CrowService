@@ -3,7 +3,9 @@ package com.github.pertuumpixel.crowservice.common.item;
 
 import com.github.pertuumpixel.crowservice.CrowService;
 
+import com.github.pertuumpixel.crowservice.core.init.ItemInit;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -24,11 +26,9 @@ public class EmptyEnvelope extends Item {
 		if (slot == -1) {
 			return ActionResult.fail(playerIn.getItemInHand(handIn));
 		}
-		
-		SealedEnvelope se = new SealedEnvelope(); //.setSender(playerIn.getDisplayName().getString());
-		SealedEnvelope.addEnvelope(se);
-		ItemStack item = new ItemStack(se);
-		playerIn.inventory.add(slot, item);
+
+
+		playerIn.addItem(((SealedEnvelope)ItemInit.SEALED_ENVELOPE.get()).setSender(playerIn.getName().getString()).getDefaultInstance());
 		return ActionResult.consume(playerIn.getItemInHand(handIn));
 
 	}

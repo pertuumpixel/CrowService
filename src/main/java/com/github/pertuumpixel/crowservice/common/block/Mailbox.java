@@ -34,7 +34,6 @@ public class Mailbox extends Block {
 
 		if (player.getItemInHand(handIn).getItem() instanceof SealedEnvelope) {
 			SealedEnvelope se = (SealedEnvelope)player.getItemInHand(handIn).getItem();
-			SealedEnvelope.removeEnvelope(se);
 			player.getItemInHand(handIn).setCount(0);
 			return ActionResultType.SUCCESS;
 		}

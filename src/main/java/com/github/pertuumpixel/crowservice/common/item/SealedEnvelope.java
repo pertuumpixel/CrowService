@@ -21,7 +21,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class SealedEnvelope extends Item {
 
-	private static ArrayList<SealedEnvelope> envelopes = new ArrayList<>();
 	
 	private String sender = "";
 	private String reciever = "";
@@ -53,12 +52,6 @@ public class SealedEnvelope extends Item {
 		}
 	}
 
-	
-	public static void addEnvelope(SealedEnvelope se) {
-		envelopes.add(se);
-	}
-	public static void removeEnvelope(SealedEnvelope se) {
-		envelopes.remove(se);
-	}
+
 	
 }
